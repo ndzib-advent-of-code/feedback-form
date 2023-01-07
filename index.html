@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Feedback</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center min-h-screen">
+    <div class="bg-slate-100 shadow-xl py-12 max-w-md">
+        <form action="#" class="[&>.padded]:mx-[7%]">
+            <div class="padded">
+                <h1 class="font-bold text-blue-400 text-3xl">Send us some feedback</h1>
+                <p class="py-4 pb-7 text-slate-600">Do you hve a suggesion or found some bug? Let us know in the field below.</p>
+            </div>
+            <textarea name="" class="w-full h-52 py-6 px-[7%] resize-none" placeholder="Describe your issue or idea..."></textarea>
+            <div class="padded">
+                <div class="flex gap-2 py-5 justify-between text-slate-500">
+                    <span>
+                        <input type="radio" name="category" value="bug" id="bug">
+                        <label for="bug">Bug</label>
+                    </span>
+
+                    <span>
+                        <input type="radio" name="category" value="comment" id="comment">
+                        <label for="comment">Comment</label>
+                    </span>
+
+                    <span>
+                        <input type="radio" name="category" value="other" id="other">
+                        <label for="other">Other</label>
+                     </span>
+                </div>
+
+                <button class="text-white padded w-[100%] py-3 mt-4 font-bold bg-blue-500">
+                                Send Feedback
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
